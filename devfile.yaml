@@ -8,7 +8,10 @@ components:
       volumeMounts:
         - name: venv
           path: /home/user/.venv
-      memoryLimit: 2G
+      memoryLimit: '2Gi'
+      memoryRequest: '1Gi'
+      cpuLimit: '2'
+      cpuRequest: '1'
       mountSources: true
   - name: venv
     volume:
