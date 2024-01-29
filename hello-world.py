@@ -4,5 +4,10 @@
 # -------------------------------------------------------------
 # This program prints Hello, world!
 
+
+import time
 str = 'world'
-print('Hello, ' + str + '!')
+while True:
+    print('Hello, ' + str + '!!')
+    time.sleep(3)
+print('by')
