@@ -6,6 +6,7 @@
       "redhat.fabric8-analytics",
       "GitLab.gitlab-workflow",
       "redhat.vscode-openshift-connector",
-      "cnshenj.vscode-task-manager"
+      "cnshenj.vscode-task-manager",
+      "Continue.continue"
     ]
 }
