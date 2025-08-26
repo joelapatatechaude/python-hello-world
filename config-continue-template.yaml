@@ -1,0 +1,13 @@
+version: 1.0.0
+schema: v1
+models:
+  - name: OpenAI GPT-5
+    provider: openai
+    model: gpt-5	
+    apiKey: "${apitoken}"
+  - name: OpenAI Embeddings
+    provider: openai
+    model: text-embedding-3-large
+    apiKey: "${apitoken}"
+    roles:
+      - embed

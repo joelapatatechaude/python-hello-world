@@ -33,7 +33,7 @@ commands:
   - id: post-script
     exec:
       component: python
-      commandLine: "touch /home/user/.continue/post.txt"
+      commandLine: "envsubst <$PROJECT_SOURCE/config-continue-template.yaml > /home/user/.continue/config.yaml"
 events:
   postStart:
     - post-script
