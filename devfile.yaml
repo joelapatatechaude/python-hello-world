@@ -30,16 +30,10 @@ commands:
       commandLine: python -m venv .venv && . .venv/bin/activate && python hello-world.py
       group:
         kind: run
-  - id: pre-script
-    exec:
-      component: python
-      commandLine: "touch /home/user/.continue/pre.txt"
   - id: post-script
     exec:
       component: python
       commandLine: "touch /home/user/.continue/post.txt"
 events:
-  preStart:
-    - pre-script
   postStart:
     - post-script
