@@ -10,8 +10,6 @@ components:
           path: /home/user/.venv
         - name: continue
           path: /home/user/.continue
-        - name: chris
-          path: /home/user/.chris
       memoryLimit: '1Gi'
       memoryRequest: '512Mi'
       cpuLimit: '0.5'
@@ -21,9 +19,6 @@ components:
     volume:
       size: 1G
   - name: continue
-    volume:
-      size: 1G
-  - name: chris
     volume:
       size: 1G
 commands:
