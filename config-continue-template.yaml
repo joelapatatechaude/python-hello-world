@@ -1,4 +1,4 @@
-name: open ai
+name: Parasol MaaS
 version: 1.0.0
 schema: v1
 models:
@@ -6,9 +6,11 @@ models:
     provider: openai
     model: gpt-5	
     apiKey: "${apitoken}"
-  - name: OpenAI Embeddings
+  - name: Nomic Embeddings
     provider: openai
-    model: text-embedding-3-large
-    apiKey: "${apitoken}"
+    model: "${nomic-embed-model}"
+    apiBase: "${nomic-embed-endpoint}/v1/"
+    maxBatchSize: 32
+    apiKey: "${nomic-embed-token}"
     roles:
       - embed
