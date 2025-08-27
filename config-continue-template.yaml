@@ -17,7 +17,7 @@ models:
   - name: Granite 3.3 8b
     provider: openai
     model: "${GRANITE_3_3_8B_MODEL}"
-    apiBase: "${GRANITE_3_3_8B_ENDPOINT}"
+    apiBase: "${GRANITE_3_3_8B_ENDPOINT}/v1/"
     apiKey: "${GRANITE_3_3_8B_TOKEN}"
     roles:
       - autocomplete
