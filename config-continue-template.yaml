@@ -8,9 +8,9 @@ models:
     apiKey: "${apitoken}"
   - name: Nomic Embeddings
     provider: openai
-    model: "${nomic-embed-model}"
-    apiBase: "${nomic-embed-endpoint}/v1/"
+    model: "${NOMIC_EMBED_MODEL}"
+    apiBase: "${NOMIC_EMBED_ENDPOINT}/v1/"
     maxBatchSize: 32
-    apiKey: "${nomic-embed-token}"
+    apiKey: "${NOMIC_EMBED_TOKEN}"
     roles:
       - embed
