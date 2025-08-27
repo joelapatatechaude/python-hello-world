@@ -14,3 +14,13 @@ models:
     apiKey: "${NOMIC_EMBED_TOKEN}"
     roles:
       - embed
+  - name: Granite 3.3 8b
+    provider: openai
+    model: "${GRANITE_3_3_8B_MODEL}"
+    apiBase: "${GRANITE_3_3_8B_ENDPOINT}"
+    apiKey: "${GRANITE_3_3_8B_TOKEN}"
+    roles:
+      - autocomplete
+    requestOptions:
+      extraBodyProperties:
+        think: false # turning off the thinking
