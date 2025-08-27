@@ -20,6 +20,13 @@ models:
     apiBase: "${GRANITE_3_3_8B_ENDPOINT}/v1/"
     apiKey: "${GRANITE_3_3_8B_TOKEN}"
     roles:
+      - chat
+  - name: Qwen 14b
+    provider: openai
+    model: "${QWEN_14B_MODEL}"
+    apiBase: "${QWEN_14B_ENDPOINT}/v1/"
+    apiKey: "${QWEN_14B_TOKEN}"
+    roles:
       - autocomplete
     requestOptions:
       extraBodyProperties:
